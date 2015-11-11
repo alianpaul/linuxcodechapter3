@@ -1,9 +1,0 @@
-#include "CLMessage.h"
-
-CLMessage :: CLMessage(unsigned long lmsgID) : m_lMsgID(lmsgID) {
-  m_clMsgID = m_lMsgID;
-}
-
-CLMessage :: ~CLMessage() {
-
-}
