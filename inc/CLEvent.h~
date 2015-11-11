@@ -1,0 +1,22 @@
+#ifndef CL_EVENT_H
+#define CL_EVENT_H
+
+#include "CLStatus.h"
+#include "CLMutex.h"
+#include "CLConditionVariable.h"
+
+class CLEvent{
+ public:
+  CLEvent();
+  ~CLEvent();
+  
+  CLStatus Set();
+  CLStatus Wait();
+  
+ private:
+  int m_Flag;
+  CLMutex m_Mutex;
+  CLConditionVariable m_Condition;
+};
+
+#endif

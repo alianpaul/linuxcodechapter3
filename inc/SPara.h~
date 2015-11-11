@@ -1,0 +1,9 @@
+#ifndef SPARA
+#define SPARA
+
+struct SPara{
+  int flag;
+  CLMutex mutex;
+};
+
+#endif
